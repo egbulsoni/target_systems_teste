@@ -1,4 +1,10 @@
 def reverter_string(s):
-    return s[::-1]
+    resultado = ""
+    for i in range(len(s)-1, -1, -1):
+        resultado += s[i]
+    return resultado
 
-s = input("Qual string deseja inverter?")
+entrada = input("Digite uma string: ")
+
+string_invertida = reverter_string(entrada)
+print("String invertida:", string_invertida)
